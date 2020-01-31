@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+header{
+    width:100%;
+    height: auto;
+}
+.badge{
+  height: 7vh;
+  width: 100%;
+  background-color: #16285a;
+}
+.jumbo{
+  height: 40vh;
+  width: 100%;
+  position: relative;
+}
+ul{
+  float: right;
+}
+ul li{
+  list-style: none;
+  float: left;
+}
+ul li img{
+  height: 4.2vh;
+  margin-top: 1.5vh;
+  margin-right: 1vw;
+  display: inline-block;
+}
+.youtube{
+  margin-right: 2vw;
+}
+
+.bg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url(./assets/top_banner.jpg);
+  background-size: cover;
+  background-position: 50% 0%;
+  opacity: 0.5;
+}
+main{
+  padding: 3vh 2vw;
+  height: 60vh;
+}
+aside{
+  width: 20%;
+  height: 60vh;
+  background: pink;
+  float: left;
+}
+.test{
+  width: 70vw;
+  height: 60vh;
+  position: relative;
+  float: right;
+}
+.fourBt{
+  width: 100%;
+  height: 100%;
+  background-color: #a7c8f3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+}
+
+.choiceWrap{
+  display: flex;
+  justify-content: space-around;
+}
+.choiceWrap div{
+  flex:1;
+  text-align: center;
+}
+.question h2{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.fourBt div img{
+  width: 40%;
+  margin:10% auto;
+  margin-left: 10vw;
+}
+.question{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #F3F8F2;
+  display: none;
+}
+
+
+
+
+
+
+footer{
+  width: 100%;
+  height: 6vh;
+  background-color: #16285a;
+  text-align: center;
+  color: white;
+  font-family: Roboto;
+  line-height: 6vh;
+}
+
+.lungCancer:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
