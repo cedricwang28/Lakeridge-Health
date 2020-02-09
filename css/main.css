@@ -23,6 +23,7 @@ header{
 .logo{
   display: block;
   margin: 0 auto;
+  /* padding-top: 1vh; */
   width: 300px;
 }
 .banner{
@@ -163,6 +164,10 @@ footer{
 
 
 @media only screen and (max-width:800px){
+  .logo{
+    padding-top: 2vh;
+    width: 250px;
+  }
   aside{
     display: none;
   }
@@ -182,3 +187,19 @@ footer{
     background-color: #fff;
   }
 }
+
+@media only screen and (min-height:900px){
+  .logo{
+    padding-top: 5vh;
+    width: 300px;
+  }
+}
+
+
+@media only screen and (min-height:1025px){
+  .logo{
+    padding-top: 5vh;
+    width: 400px;
+  }
+}
+
