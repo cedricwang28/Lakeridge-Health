@@ -99,4 +99,20 @@ $(function(){
          }
     });
 
+    //when clicking 'start a new test'
+    $('.question button').click(function(){
+        $('.question').hide();
+        ifOver70 == 0;
+        $('.fourBt').show();
+    });
+
+
+    setTimeout(function(){
+        $('.splashWrap').hide();
+    },5000);
+
+    
+
+
+
 });

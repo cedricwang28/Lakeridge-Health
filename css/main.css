@@ -2,7 +2,9 @@
     margin:0;
     padding:0;
 }
-
+body{
+  position: relative;
+}
 header{
     width:100%;
     height: auto;
@@ -13,10 +15,22 @@ header{
   background-color: #16285a;
 }
 .jumbo{
-  height: 40vh;
+  height: 30vh;
   width: 100%;
   position: relative;
 }
+
+.logo{
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+.banner{
+  width: 90%;
+  margin-left:10%;
+  transform: translate(0,-2%);
+}
+
 ul{
   float: right;
 }
@@ -41,10 +55,10 @@ ul li img{
   right: 0;
   bottom: 0;
   z-index: -1;
-  background-image: url(./assets/top_banner.jpg);
+  background-image: url(../assets/top_banner.jpg);
   background-size: cover;
   background-position: 50% 0%;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 main{
   padding: 3vh 2vw;
@@ -53,7 +67,7 @@ main{
 aside{
   width: 20%;
   height: 60vh;
-  background: pink;
+  
   float: left;
 }
 .test{
@@ -61,14 +75,36 @@ aside{
   height: 60vh;
   position: relative;
   float: right;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: -7px;
+}
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  margin: 0 auto;
+    
 }
 .fourBt{
   width: 100%;
   height: 100%;
   background-color: #a7c8f3;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   position: absolute;
+  font-family: roboto;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.fourBt p{
+  text-align: center;
+}
+.fourBt button{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: 30px;
+  left: 45%;
 }
 
 .choiceWrap{
@@ -99,6 +135,10 @@ aside{
 
 
 
+.question button{
+  height: 30px;
+  
+}
 
 
 
@@ -115,4 +155,30 @@ footer{
 .lungCancer:hover{
   cursor: pointer;
   transform: scale(1.2);
+}
+
+
+
+
+
+
+@media only screen and (max-width:800px){
+  aside{
+    display: none;
+  }
+  .test{
+    width: 100%;
+  }
+  /* header{
+    height: 30vh;
+  } */
+
+  .fourBt button{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    left: 40%;
+    background-color: #fff;
+  }
 }
