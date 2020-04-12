@@ -1,18 +1,19 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 body{
   position: relative;
 }
-header{
-    width:100%;
-    height: auto;
-}
+
+
+
+
 .badge{
-  height: 7vh;
+  height: 8vh;
   width: 100%;
-  background-color: #16285a;
+  background-color: #7CA5B8;
 }
 .jumbo{
   height: 30vh;
@@ -22,10 +23,19 @@ header{
 
 .logo{
   display: block;
-  margin: 0 auto;
-  /* padding-top: 1vh; */
-  width: 300px;
+  float: left;
+  height: 6vh;
+  margin-left: 3vw;
+  margin-top: 1vh;
 }
+
+
+
+.spaceBetween {
+  justify-content: space-between;
+  align-items: center;
+}
+
 .banner{
   width: 90%;
   margin-left:10%;
@@ -41,7 +51,7 @@ ul li{
 }
 ul li img{
   height: 4.2vh;
-  margin-top: 1.5vh;
+  margin-top: 2vh;
   margin-right: 1vw;
   display: inline-block;
 }
@@ -62,144 +72,156 @@ ul li img{
   opacity: 0.3;
 }
 main{
-  padding: 3vh 2vw;
-  height: 60vh;
+  background-image: url("../assets/svgBG.svg");
+  padding: 1vh 2vw;
+  height: 86vh;
 }
-aside{
-  width: 20%;
-  height: 60vh;
-  
-  float: left;
-}
+
 .test{
-  width: 70vw;
-  height: 60vh;
+  width: 80%;
+  height: 88%;
   position: relative;
-  float: right;
-  border-radius: 5px;
   overflow: hidden;
   margin-top: -7px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  background-color: rgba(131, 131, 143, 0.5);
+  border-radius:3%;
+  margin: 0 auto;
+  margin-top:5vh;
+  
 }
 h1{
   text-align: center;
   margin-bottom: 20px;
   margin: 0 auto;
+  font-size: 2.8rem;
+  color: rgb(255, 255, 255);
+  font-family: 'Josefin Sans', sans-serif;
     
 }
 .fourBt{
+  /* border-radius: 5%; */
+  /* box-shadow: 5px 5px 8px rgba(0,0,0,0.1); */
   width: 100%;
-  height: 100%;
-  background-color: #a7c8f3;
+  height: 100vh;
   position: absolute;
-  font-family: roboto;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 5%;
   box-sizing: border-box;
 }
 .fourBt p{
   text-align: center;
+  width: 90%;
+  margin:3vh auto;
+  font-size: 1.5rem;
+  font-family: 'Exo 2', sans-serif; 
+  color: black;
 }
 .fourBt button{
-  width: 100px;
-  height: 50px;
-  position: absolute;
-  bottom: 30px;
-  left: 45%;
-}
-
-.choiceWrap{
-  display: flex;
-  justify-content: space-around;
-}
-.choiceWrap div{
-  flex:1;
-  text-align: center;
-}
-.question h2{
-  text-align: center;
-  margin-top: 30px;
-}
-
-.fourBt div img{
-  width: 40%;
-  margin:10% auto;
-  margin-left: 10vw;
-}
-.question{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: #F3F8F2;
-  display: none;
-}
-
-
-
-.question button{
-  height: 30px;
   
 }
 
 
 
+.lungCancer:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+
+
+.restartTest{
+  border-radius: 50%;
+}
+
 footer{
   width: 100%;
   height: 6vh;
-  background-color: #16285a;
+  background-color: #7CA5B8;
   text-align: center;
   color: white;
-  font-family: Roboto;
   line-height: 6vh;
-}
-
-.lungCancer:hover{
-  cursor: pointer;
-  transform: scale(1.2);
+  font-size: 2.5vh;
 }
 
 
 
+.lungImg{
+  width: 120px;
+  display: block;
+  margin: 1vh auto;
+}
+
+.lungCancer{
+  margin: 3vh auto;
+  display: block;
+}
 
 
 
-@media only screen and (max-width:800px){
-  .logo{
-    padding-top: 2vh;
-    width: 250px;
+
+@media only screen and (max-width:820px){
+  .test{
+    width: 90%;
+    height: 88%;
+    
+    
   }
-  aside{
-    display: none;
+
+  .fourBt h1{
+    font-size: 30px;
   }
+  .fourBt p{
+    font-size: 24px;
+  }
+
+
+}
+
+@media only screen and (max-width:500px){
   .test{
     width: 100%;
+    height: 88%;
+    
+    
   }
-  /* header{
-    height: 30vh;
-  } */
 
-  .fourBt button{
-    width: 100px;
-    height: 50px;
-    position: absolute;
-    bottom: 30px;
-    left: 40%;
-    background-color: #fff;
+  .fourBt h1{
+    font-size: 26px;
+    margin-top: 3vh;
   }
+  .fourBt p{
+    font-size: 20px;
+  }
+
+  .lungCancer{
+    margin: 4vh auto;
+    display: block;
+  }
+  
+
 }
 
-@media only screen and (min-height:900px){
-  .logo{
-    padding-top: 5vh;
-    width: 300px;
+@media only screen and (max-width:350px){
+  .test{
+    width: 100%;
+    height: 93%;
+    margin-top: 2vh;
+    
   }
-}
 
-
-@media only screen and (min-height:1025px){
-  .logo{
-    padding-top: 5vh;
-    width: 400px;
+  .fourBt h1{
+    font-size: 24px;
+    margin-top: 2vh;
   }
-}
+  .fourBt p{
+    font-size: 18px;
+  }
 
+  .lungCancer{
+    margin: 3vh auto;
+    display: block;
+  }
+  
+
+}

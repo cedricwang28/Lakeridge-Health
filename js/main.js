@@ -15,7 +15,7 @@ $(function(){
     $('.over70 .yes').click(function(){
         $('.over70').hide();
         $('.smallCellOrNot').show();
-        ifOver70 += 1;
+        ifOver70 = 1;
     });
     $('.over70 .no').click(function(){
         $('.over70').hide();
@@ -65,7 +65,12 @@ $(function(){
     //when answering 'if adjuvant' question
     $('.adjuvantOrNot .yes').click(function(){
         $('.adjuvantOrNot').hide();
-        $('.cctg').show();
+        if(ifOver70){
+            $('.cctgAndBasket').show();
+        }else{
+            $('.cctg').show();
+        }
+        
     });
     $('.adjuvantOrNot .no').click(function(){
         $('.adjuvantOrNot').hide();
@@ -100,19 +105,15 @@ $(function(){
     });
 
     //when clicking 'start a new test'
-    $('.question button').click(function(){
+    $('.restartTest').click(function(){
         $('.question').hide();
-        ifOver70 == 0;
+        ifOver70 = 0;
         $('.fourBt').show();
     });
 
-
-    setTimeout(function(){
-        $('.splashWrap').hide();
-    },5000);
-
-    
-
-
-
+    $('.newTest').click(function(){
+        $('.question').hide();
+        ifOver70 = 0;
+        $('.fourBt').show();
+    });
 });

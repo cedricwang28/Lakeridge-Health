@@ -6,147 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lung Cancer Eligibility Test</title>
+
+    <!-- goggle font is here -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+
     <link rel="shortcut icon" href="./assets/icon.ico" type="image">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/splash.css">
+    <!-- <link rel="stylesheet" href="./css/splash.css"> -->
+    <link rel="stylesheet" href="./css/test.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/TweenMax.min.js"></script>
+
+    <!-- icon link -->
+    <script src="https://kit.fontawesome.com/118ba1fe41.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <main class="splashWrap"> 
-        <div class="splashPage">
-            <img id="splashLogo" src="./assets/logo1.png" alt="Logo For splash Page" />
-            <h3 id="splashText"> lakeridge health oshawa </h3>
-        </div>
+    <header class="badge">
 
-    </main>
-
-
-
-    <header>
-        <div class="badge">
-            <ul>
-                <li><a href="https://www.facebook.com/LakeridgeHealth/"><img src="./assets/facebook.png" alt="facebook"></a></li>
-                <li><a href="https://twitter.com/lakeridgehealth"><img src="./assets/twitter.png" alt=""></a></li>
-                <li><a href="https://www.youtube.com/user/LakeridgeHealth?_mid_=1722"><img src="./assets/youtube.png" class="youtube" alt=""></a></li>
-            </ul>
-        </div>
-        <div class="jumbo">
-            <div class="bg">
-
-            </div>
-            <img src="./assets/lake.png" alt="" class="logo">
-        </div>
+        <a href="index.html"><img src="./assets/lakeridge-logo.png" alt="" srcset="" class="logo"></a>
+        <ul>
+            <li><a href="https://www.facebook.com/LakeridgeHealth/"><img src="./assets/facebook.png" alt="facebook"></a>
+            </li>
+            <li><a href="https://twitter.com/lakeridgehealth"><img src="./assets/twitter.png" alt=""></a></li>
+            <li><a href="https://www.youtube.com/user/LakeridgeHealth?_mid_=1722"><img src="./assets/youtube.png"
+                        class="youtube" alt=""></a></li>
+        </ul>
 
     </header>
 
     <main>
-        <aside>
-            <img src="./assets/banner01.png" alt="" class="banner">
-        </aside>
         <div class="test">
             <div class="fourBt">
-                <div>
-                    <h1>Lung Cancer Eligibility Test</h1>
-                    <p>The Lung Cancer Eligilibty test decides weather a patient with lung cancer is suitable for a Lung
-                        Cancer clinical trial. </p>
 
-                    <img src="./assets/Lung cancer.png">
-                    <button class="lungCancer">Start</button>
-                </div>
+                <h1>Lung Cancer Eligibility Test</h1>
+                <p>The Lung Cancer Eligilibty test decides whether a patient with lung cancer is suitable for a Lung
+                    Cancer clinical trial. </p>
+
+                <img src="./assets/Lung.png" class="lungImg">
+                <button class="lungCancer">Start <i class="fas fa-arrow-alt-circle-right"></i></button>
+
 
             </div>
 
             <div class="over70 question">
-                <button>Restart a Test</button>
+                <button class="restartTest"><i class="fas fa-undo-alt"></i></button>
                 <h2>Is the patient over 70 years old?</h2>
                 <div class="choiceWrap">
                     <div>
-                        <input type="radio" name="yes_no" checked class="yes">Yes</input>
+                        <button class="yes">YES</button>
                     </div>
                     <div>
-                        <input type="radio" name="yes_no" class="no">No</input>
+                        <button class="no">NO</button>
                     </div>
                 </div>
             </div>
 
             <div class="smallCellOrNot question">
-                <button>Restart a Test</button>
+                <button class="restartTest"><i class="fas fa-undo-alt"></i></button>
                 <h2>Does patient suffer from Small Cell Cancer or Non-small Cell Cancer?</h2>
                 <div class="choiceWrap">
                     <div>
-                        <input type="radio" name="yes_no" checked class="small">Small Cell Cancer</input>
+                        <button class="small">Small Cell Cancer</button>
                     </div>
                     <div>
-                        <input type="radio" name="yes_no" class="nonSmall">Non-small Cell Cancer</input>
+                        <button class="nonSmall">Non-small Cell Cancer</button>
                     </div>
                 </div>
             </div>
 
             <div class="resectableOrNot question">
-                <button>Restart a Test</button>
+                <button class="restartTest"><i class="fas fa-undo-alt"></i></button>
                 <h2>Is the patient's tumour resectable?</h2>
                 <div class="choiceWrap">
                     <div>
-                        <input type="radio" name="yes_no" checked class="yes">Resectable</input>
+                        <button class="yes">Resectable</button>
                     </div>
                     <div>
-                        <input type="radio" name="yes_no" class="no">Unresectable</input>
+                        <button class="no">Unresectable</button>
                     </div>
                 </div>
             </div>
 
             <div class="limitedOrNot question">
-                <button>Restart a Test</button>
-                <h2>Is it limited or extensive?</h2>
+                <button class="restartTest"><i class="fas fa-undo-alt"></i></button>
+                <h2>Is the Small Cell Cancer limited type or extensive type?</h2>
                 <div class="choiceWrap">
                     <div>
-                        <input type="radio" name="yes_no" checked class="limited">limited</input>
+                        <button class="limited">Limited</button>
                     </div>
                     <div>
-                        <input type="radio" name="yes_no" class="extensive">extensive</input>
+                        <button class="extensive">Extensive</button>
                     </div>
                 </div>
             </div>
 
             <div class="maintenanceOrNot question">
-                <button>Restart a Test</button>
+                <button class="restartTest"><i class="fas fa-undo-alt"></i></button>
                 <h2>Is mainenance therapy required for the patient?</h2>
                 <div class="choiceWrap">
                     <div>
-                        <input type="radio" name="yes_no" checked class="yes">Yes</input>
+                        <button class="yes">Yes</button>
                     </div>
                     <div>
-                        <input type="radio" name="yes_no" class="no">No</input>
+                        <button class="no">No</button>
                     </div>
                 </div>
             </div>
             <div class="adjuvantOrNot question">
-                <button>Restart a Test</button>
-                <h2>Is adjuvant therapy required for the patient?</h2>
+                <button class="restartTest"><i class="fas fa-undo-alt"></i></button>
+                <h2>Is Adjuvant Therapy required for the patient?</h2>
                 <div class="choiceWrap">
                     <div>
-                        <input type="radio" name="yes_no" checked class="yes">Yes</input>
+                        <button class="yes">Yes</button>
                     </div>
                     <div>
-                        <input type="radio" name="yes_no" class="no">No</input>
+                        <button class="no">No</button>
                     </div>
                 </div>
             </div>
 
             <div class="123Line question">
-                <button>Restart a Test</button>
-                <h2>which line is for the patient?</h2>
+                <button class="restartTest"><i class="fas fa-undo-alt"></i></button>
+                <h2>which Line is the patient suitable for?</h2>
                 <div class="choiceWrap">
                     <div>
-                        <input type="radio" name="yes_no" checked class="one">First Line</input>
+                        <button class="one">First Line</button>
                     </div>
                     <div>
-                        <input type="radio" name="yes_no" class="two">Second Line</input>
+                        <button class="two">Second Line</button>
                     </div>
                     <div>
-                        <input type="radio" name="yes_no" class="three">Third Line</input>
+                        <button class="three">Third Line</button>
                     </div>
                 </div>
             </div>
@@ -154,58 +147,65 @@
 
 
             <div class="abbvie question">
-                <button>Start a New Test</button>
-                <h2>ABBVIE is suitable for the patient</h2>
+                <button class="newTest">Start a New Test</button class="restartTest">
+                <h2><span>ABBVIE</span> is suitable for the patient</h2>
                 <div>
 
                 </div>
             </div>
             <div class="cctg question">
-                <button>Start a New Test</button>
-                <h2>CCTG is suitable for the patient</h2>
+                <button class="newTest">Start a New Test</button>
+                <h2><span>CCTG</span> is suitable for the patient</h2>
+                <div>
+
+                </div>
+            </div>
+            <div class="cctgAndBasket question">
+                <button class="newTest">Start a New Test</button>
+                <h2><span>CCTG</span> and <span>5C STUDY</span> are both suitable for the patient</h2>
                 <div>
 
                 </div>
             </div>
             <div class="roche question">
-                <button>Start a New Test</button>
-                <h2>ROCHE is suitable for the patient</h2>
+                <button class="newTest">Start a New Test</button>
+                <h2><span>ROCHE</span> is suitable for the patient</h2>
                 <div>
 
                 </div>
             </div>
             <div class="bms question">
-                <button>Start a New Test</button>
-                <h2>BMS is suitable for the patient</h2>
+                <button class="newTest">Start a New Test</button>
+                <h2><span>BMS</span> is suitable for the patient</h2>
                 <div>
 
                 </div>
             </div>
             <div class="rocheAndBasket question">
-                <button>Start a New Test</button>
-                <h2>ROCHE and basket study are both suitable for the patient</h2>
+                <button class="newTest">Start a New Test</button>
+                <h2><span>ROCHE</span> and <span>5C STUDY</span> are both suitable for the patient</h2>
                 <div>
 
                 </div>
             </div>
             <div class="bmsAndBasket question">
-                <button>Start a New Test</button>
-                <h2>BMS and Basket study are both suitable for the patient</h2>
+                <button class="newTest">Start a New Test</button>
+                <h2><span>BMS</span> and <span>5C STUDY</span> are both suitable for the patient</h2>
                 <div>
 
                 </div>
             </div>
             <div class="5cStudy question">
-                <button>Start a New Test</button>
-                <h2>the 5C STUDY is suitable for the patient</h2>
+                <button class="newTest">Start a New Test</button>
+                <h2>the <span>5C STUDY</span> is suitable for the patient</h2>
                 <div>
 
                 </div>
             </div>
 
             <div class="noTrial question">
-                <button>Start a New Test</button>
-                <h2>there is no suitable trial</h2>
+                <button class="newTest">Start a New Test</button>
+                <h2>There is no suitable trial</h2>
                 <div>
 
                 </div>
@@ -221,7 +221,6 @@
 
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/splash.js"> </script>
 </body>
 
 </html>
